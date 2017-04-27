@@ -1,0 +1,8 @@
+<h1><%= @state.name %></h1>
+<h2>State Stations:</h2>
+<% @state.stations.each do |station| %>
+  <div class="horizontal">
+    <p><%= link_to "#{station.city}", state_station_programs_path(@state, station) %></p>
+    <p><%= "#{station.broadcast_area}" %></p>
+  </div>
+<% end %>

@@ -1,0 +1,7 @@
+<h1>Choose Your State</h1>
+
+<% @states.each do |state| %>
+  <div class="flex">
+    <h3><%= link_to "#{state.name}", state_path(state) %></h3>
+  </div>
+<% end %>

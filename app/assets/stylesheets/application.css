@@ -1,0 +1,22 @@
+.content {
+  background-color: white;
+  opacity: 0.7;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+body {
+  background-image: url('Edmonton-Folk-Fest.jpg');
+}
+
+header {
+  text-align: center;
+  padding-top: 15px
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
