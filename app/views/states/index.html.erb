@@ -1,9 +1,8 @@
 <h1>Choose Your State</h1>
-
+  <div class="flex">
   <% @states.each do |state| %>
-    <div class="flex">
-      <div>
-    <h3><%= link_to "#{state.name}", state_path(state) %></h3>
-  </div>
-  </div>
+
+    <div class="state"><%= link_to "#{state.name}", state_path(state) %></div>
+
 <% end %>
+</div>
