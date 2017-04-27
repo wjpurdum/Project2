@@ -6,4 +6,10 @@ class ProgramsController < ApplicationController
     @programs = Program.all
 
   end
+
+  def show
+    @station = Station.find(params[:station_id])
+    @state = State.find(params[:state_id])
   end
+
+end

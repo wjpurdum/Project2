@@ -4,13 +4,17 @@
     <title>ProjectTwo</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application',
+'https://fonts.googleapis.com/css?family=Signika',
+ media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div class="content">
-      <header>Folk, Bluegrass and Strings Collective</header>
+      <header>Folk, Bluegrass and Strings Collective
+        <hr>
+      </header>
     <%= yield %>
     </div>
   </body>

@@ -1,7 +1,7 @@
 <h2>Station Programs:</h2>
 <% @station.programs.each do |program| %>
   <div class="horizontal">
-    <p><%=  "#{program.name}" %></p>
+    <p><%=  link_to "#{program.name}", state_station_program_path(@state, @station, program)%></p>
     <p><%=  "#{program.description}" %></p>
   </div>
 <% end %>
