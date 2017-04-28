@@ -2,6 +2,7 @@
 <p><%= "Hosted by #{@program.host}" %></p>
 <p class='body'><%= @program.description %></p>
 <p class='air-time'><%= "Airing every #{@program.day} at #{@program.time}" %></p>
+<p><%=link_to "Check out the program page and archived episodes", "#{@program.program_url}" %></p>
 
 <% if @program.users.include? current_user %>
       <p class='add-fave'><%= "Love this program? Add it to your favorites." %> <%=link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@state, @station, @program), method: :delete, class: "fav" %></p>

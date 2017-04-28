@@ -1,9 +1,5 @@
 class ProgramsController < ApplicationController
 
-  before_action :set_session
-
-
-
   def index
     @station = Station.find(params[:station_id])
     @state = State.find(params[:state_id])
@@ -21,7 +17,6 @@ class ProgramsController < ApplicationController
   @program = Program.find(params[:program_id])
   @program.favorites.create(user: current_user)
   @favorite = Favorite.find_by(program: @program, user: current_user)
-  session[].push(@program)
   redirect_to :back
 
   end

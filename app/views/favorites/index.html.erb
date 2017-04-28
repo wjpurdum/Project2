@@ -1,1 +1,8 @@
-<%= @favorites%>
+<h1>Here are your favorite programs</h1>
+  <div class="flex">
+  <% @favorites.each do |favorite| %>
+
+    <div><%= "#{favorite.program_id}"%></div>
+
+<% end %>
+</div>
