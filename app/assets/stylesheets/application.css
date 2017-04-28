@@ -103,3 +103,7 @@ a.no-fav {
   font-size: 22px;
   color: #00A676;
 }
+
+.add-fave {
+  padding-left: 10px
+}

@@ -4,7 +4,7 @@
 <p class='air-time'><%= "Airing every #{@program.day} at #{@program.time}" %></p>
 
 <% if @program.users.include? current_user %>
-      <%= "Love this program? Add it to your favorites." %> <%=link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@state, @station, @program), method: :delete, class: "fav" %>
+      <p class='add-fave'><%= "Love this program? Add it to your favorites." %> <%=link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@state, @station, @program), method: :delete, class: "fav" %></p>
     <% else %>
       <%= link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@state, @station, @program), method: :post, class: "no-fav" %>
     <% end %>
