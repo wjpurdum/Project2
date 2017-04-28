@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+    <h3><%= link_to "#{program.name}", state_station_program_path(@state, @station, program)%></h3>

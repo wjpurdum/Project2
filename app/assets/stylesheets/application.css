@@ -7,6 +7,11 @@
 
 }
 
+.user-info {
+  color: white;
+  padding-top: 20px;
+}
+
 body {
   background-image: url('Edmonton-Folk-Fest.jpg');
   font-family: 'Signika', sans-serif;
@@ -29,17 +34,28 @@ header {
 
 a:link {
     text-decoration: none;
-    color: #813FEF;
+    color: orange;
+
 }
 
 .state {
   font-size: 30px;
   border-radius: 5px;
   padding: 5px;
-  border: 1px black solid;
+  border: 1px #813FEF solid;
   text-decoration: none;
-  color: #813FEF;
+  background-color: #813FEF;
 
+}
+
+.login a {
+  color: white;
+  font-size: 20px;
+}
+
+.login {
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
 .body-text {

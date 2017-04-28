@@ -5,3 +5,4 @@
     <p><%= "Broadcasting to #{station.broadcast_area} at #{station.station}" %></p>
   </div>
 <% end %>
+<p><%= "Know a station and don't see it here? Feel free to" %> <%= link_to "add it", new_state_station_path(@state) %></p>

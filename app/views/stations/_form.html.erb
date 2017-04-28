@@ -1,0 +1,15 @@
+<%= form_for [@state, @station] do |f| %>
+  <%= f.label :acronym %>
+  <%= f.text_field :acronym %>
+
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+
+  <%= f.label :broadcast_area %>
+  <%= f.text_field :broadcast_area %>
+
+  <%= f.label :station %>
+  <%= f.text_field :station %>
+
+  <%= f.submit %>
+<% end %>
