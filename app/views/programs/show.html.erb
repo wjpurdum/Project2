@@ -1,0 +1,9 @@
+<p><%= @program.name %></p>
+<p><%= @program.description %></p>
+<p><%= "Every #{@program.day} at #{@program.time}" %></p>
+<p><%= @program.host %></p>
+<% if @program.users.include? current_user %>
+      <%= link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@program), method: :delete, class: "fav" %>
+    <% else %>
+      <%= link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@program), method: :post, class: "no-fav" %>
+    <% end %>

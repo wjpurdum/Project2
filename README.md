@@ -23,3 +23,9 @@ Things you may want to cover:
 
 * ...
     <h3><%= link_to "#{program.name}", state_station_program_path(@state, @station, program)%></h3>
+
+    <!-- <% if program.users.include? current_user %>
+      <%= link_to "&hearts;".html_safe, remove_favorite_program_path(program), method: :delete, class: "fav" %>
+    <% else %>
+      <%= link_to "&hearts;".html_safe, add_favorite_program_path(program), method: :post, class: "no-fav" %>
+    <% end %> -->

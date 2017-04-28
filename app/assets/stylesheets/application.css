@@ -65,3 +65,13 @@ a:link {
 h1 {
   text-align: center;
 }
+
+a.fav {
+  text-decoration: none;
+  color: red;
+}
+
+a.no-fav {
+  text-decoration: none;
+  color: black;
+}
