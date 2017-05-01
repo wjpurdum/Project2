@@ -1,8 +1,10 @@
-<h1>Here are your favorite programs</h1>
+<h1 class="state-title">Your favorite programs</h1>
+
   <div class="flex">
   <% @favorites.each do |favorite| %>
 
-    <div><%= "#{favorite.program}"%></div>
+    <div><%="#{favorite.program.name}"%><%= link_to "Check out archived episodes", "#{favorite.program.program_url}" %></div>
 
 <% end %>
 </div>
+<h3 class='jam'>Jam on!</h3>
