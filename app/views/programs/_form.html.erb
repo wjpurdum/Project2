@@ -1,0 +1,22 @@
+<%= form_for [@state, @station, @program] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :day %>
+  <%= f.text_field :day %>
+
+  <%= f.label :time %>
+  <%= f.text_field :time %>
+
+  <%= f.label :host %>
+  <%= f.text_field :host %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :program_url %>
+  <%= f.text_field :program_url %>
+
+
+  <%= f.submit %>
+<% end %>

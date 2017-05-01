@@ -29,19 +29,21 @@ class ProgramsController < ApplicationController
   end
 
   def new
-  @station = Station.new
+  @program = Program.new
   @state = State.find(params[:state_id])
+  @station = Station.find(params[:station_id])
   end
 
   def create
   @state = State.find(params[:state_id])
-  @station = @state.stations.create(station_params)
+  @station = Station.find(params[:station_id])
+  @program = @state.stations.program.create(program_params)
   redirect_to state_path(@state)
   end
 
   private
-  def station_params
-  params.require(:station).permit(:acronym, :city, :broadcast_area, :station)
+  def program_params
+  params.require(:program).permit(:name, :day, :time, :host, :description, :program_url)
   end
 
 
