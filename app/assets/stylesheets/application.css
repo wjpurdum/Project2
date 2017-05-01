@@ -107,3 +107,19 @@ a.no-fav {
 .add-fave {
   padding-left: 10px
 }
+
+.nav {
+  display: flex;
+  flex-decoration: row;
+  text-align: center;
+  font-size: 18px;
+  list-style: none;
+
+}
+
+
+li {
+  color: #03D6F7;
+  padding left: 10px;
+  padding-right: 10px;
+}

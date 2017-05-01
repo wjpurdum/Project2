@@ -26,6 +26,12 @@
     <p class="alert"><%= alert %></p>
     <div class="content">
       <header>Folk, Bluegrass and Strings Collective
+        <div class="menu">
+          <ul class = "nav">
+            <li><%= link_to "Back to State Selection", root_path %></li>
+            <li><%= link_to "View your favorites", favorites_path %></li>
+              
+        </div>
         <hr>
       </header>
     <%= yield %>
