@@ -1,11 +1,13 @@
-<p class='program-name'><%= @program.name %></p>
+<div class='program-summary'>
+<h1 class='state-title'><%= @program.name %></h1>
 <p><%= "Hosted by #{@program.host}" %></p>
 <p class='body'><%= @program.description %></p>
 <p class='air-time'><%= "Airing every #{@program.day} at #{@program.time}" %></p>
-<p><%=link_to "Check out the program page and archived episodes", "#{@program.program_url}" %></p>
+<p class='link-out'><%=link_to "Check out the program page and archived episodes", "#{@program.program_url}" %></p>
 
 <% if @program.users.include? current_user %>
       <p class='add-fave'><%= "Love this program? Add it to your favorites." %> <%=link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@state, @station, @program), method: :delete, class: "fav" %></p>
     <% else %>
-      <%= link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@state, @station, @program), method: :post, class: "no-fav" %>
+      <%=link_to "&hearts;".html_safe, state_station_program_add_favorite_path(@state, @station, @program), method: :post, class: "no-fav" %> <span class="favorites"><%= "Add this program to your favorites list" %></span>
     <% end %>
+</div>

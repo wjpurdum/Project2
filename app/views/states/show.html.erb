@@ -1,6 +1,5 @@
 <h1 class='state-title'><%= "#{@state.name} Folk and Bluegrass Stations" %></h1>
 <div class="center">
-  <p class="add-station"><%= "Know a #{@state.name} public radio station and don't see it here? Feel free to" %> <%= link_to "add it!", new_state_station_path(@state) %></p>
 </div>
 <% @state.stations.each do |station| %>
   <div class="horizontal">

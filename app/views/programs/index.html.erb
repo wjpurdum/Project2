@@ -1,9 +1,10 @@
-<h2>Station Programs:</h2>
+<h2 class='state-title'><span><%= "#{@station.acronym} Programs" %></span></h2>
+<div class="center">
 <p class="add-station"><%= "Know a #{@station.acronym} bluegrass or strings program and don't see it here? Feel free to" %> <%= link_to "add it!", new_state_station_program_path(@state, @station) %></p>
+</div>
 <% @station.programs.each do |program| %>
-  <div>
-    <h3 class="program=name"><%= link_to "#{program.name}", state_station_program_path(@state, @station, program)%></h3>
+  <div class="body">
+    <h3 class="program-name"><%= link_to "#{program.name}", state_station_program_path(@state, @station, program)%></h3>
     <p><%=  "#{program.description}" %></p>
-
   </div>
 <% end %>

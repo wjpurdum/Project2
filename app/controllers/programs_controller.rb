@@ -37,9 +37,10 @@ class ProgramsController < ApplicationController
   def create
   @state = State.find(params[:state_id])
   @station = Station.find(params[:station_id])
-  @program = @state.stations.program.create(program_params)
+  @program = @station.programs.create!(program_params.merge(user: current_user))
   redirect_to state_path(@state)
   end
+
 
   private
   def program_params

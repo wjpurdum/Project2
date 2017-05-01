@@ -1,3 +1,19 @@
+a:link{
+  color: #813FEF;
+}
+a:visited{
+  color: #813FEF;
+}
+a:hover{
+  color: #813FEF;
+}
+a:focus{
+  color: #813FEF;
+}
+a:active{
+  color: color: #813FEF;
+}
+
 .content {
   background-color: white;
   opacity: 0.8;
@@ -7,6 +23,7 @@
 }
 
 footer {
+  margin-top: 20px;
   display: flex;
   text-align: center;
   flex-direction: row;
@@ -32,18 +49,36 @@ footer {
   text-align: center;
 }
 
+.form {
+  text-align: center
+}
+
+input[type=submit] {
+  font-size: 15px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #813FEF;
+  border-color: #813FEF;
+  color: white;
+  font-weight: bold;
+}
+
+input {
+  height: 20px;
+  border-radius: 7px;
+}
+
 .state-title {
   color: #006B54;
+  text-align: center;
 
 }
 
 .favorites {
   background-color: white;
   opacity: 0.7;
-  margin: 20px;
   border-radius: 20px;
-  padding: 20px;
-
 }
 
 .user-info {
@@ -52,7 +87,6 @@ footer {
 }
 
 span {
- text-transform: uppercase;
  color: #006B54;
  font-weight: bold;
  }
@@ -80,18 +114,16 @@ header {
 
 a:link {
     text-decoration: none;
-    color: white;
     padding-right: 5px;
     padding-left: 5px;
 }
 
 .state {
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 8px;
   padding: 5px;
   border: 1px #813FEF solid;
   text-decoration: none;
-  color: white;
 
 }
 
@@ -124,7 +156,7 @@ a.no-fav {
 }
 
 .program-name {
-  font-size: 30px;
+  font-size: 25px;
   color: #490840;
   margin-top: 15px;
   margin-bottom: 15px
@@ -132,8 +164,8 @@ a.no-fav {
 
 .body {
   font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px
+  padding-left: 20px;
+  padding-right: 20px
 }
 
 .air-time {
@@ -152,9 +184,25 @@ a.no-fav {
   text-align: center;
   font-size: 18px;
   list-style: none;
-
 }
 
+.user-info {
+  padding-left: 25px;
+}
+
+.program-summary {
+  margin: 15px;
+  padding: 15px;
+}
+
+.link-out {
+  text-align: center;
+  font-size: 20px;
+}
+
+.favorites {
+  color: red;
+}
 
 li {
   color: #03D6F7;
@@ -164,7 +212,7 @@ li {
 
 .center {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .add-station {
@@ -172,13 +220,14 @@ li {
   font-size: 17px;
   border: 1px solid #006B54;
   display: inline;
-  padding: 10px;
+  padding: 13px;
   border-radius: 10px;
-  margin-bottom: 20px;
-  color: #555350;
+  margin-bottom: 40px;
+  color: white;
+  background-color: #006B54;
 }
 
 .horizontal {
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 20px
 }
