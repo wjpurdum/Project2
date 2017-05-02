@@ -64,8 +64,17 @@ input[type=submit] {
 }
 
 input {
-  height: 20px;
+  height: 25px;
+  width: 200px;
   border-radius: 7px;
+}
+
+.devise-header {
+  color: #006B54;
+}
+
+label {
+  font-size: 20px;
 }
 
 .state-title {
@@ -98,6 +107,16 @@ body {
   background-image: url('Edmonton-Folk-Fest.jpg');
    background-attachment: fixed;
   font-family: 'Signika', sans-serif;
+}
+
+.notice {
+  color: red;
+  text-decoration: underline;
+}
+
+.alert {
+  color: red;
+  text-decoration: underline;
 }
 
 header {
@@ -220,6 +239,10 @@ li {
   margin-bottom: 30px;
 }
 
+#add-it {
+  color: yellow;
+}
+
 .add-station {
   text-align: center;
   font-size: 17px;
@@ -235,4 +258,10 @@ li {
 .horizontal {
   padding: 10px 30px;
   font-size: 20px
+}
+
+/*devise form styling */
+
+.devise-form {
+  text-align: center
 }

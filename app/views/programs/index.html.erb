@@ -1,6 +1,6 @@
 <h2 class='state-title'><span><%= "#{@station.acronym} Programs" %></span></h2>
 <div class="center">
-<p class="add-station"><%= "Know a #{@station.acronym} bluegrass or strings program and don't see it here? Feel free to" %> <%= link_to "add it!", new_state_station_program_path(@state, @station) %></p>
+<p class="add-station"><%= "Know a #{@station.acronym} bluegrass or strings program and don't see it here? Feel free to" %> <span id='add-it'><%= link_to "add it!", new_state_station_program_path(@state, @station) %></span></p>
 </div>
 <% @station.programs.each do |program| %>
   <div class="body">
