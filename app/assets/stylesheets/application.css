@@ -209,7 +209,7 @@ a.no-fav {
 
 .nav {
   display: flex;
-  flex-decoration: row;
+  flex-direction: row;
   text-align: center;
   font-size: 18px;
   list-style: none;
@@ -237,7 +237,7 @@ a.no-fav {
 
 li {
   color: #03D6F7;
-  padding left: 10px;
+  padding-left: 10px;
   padding-right: 10px;
 }
 
