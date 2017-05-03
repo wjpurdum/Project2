@@ -111,7 +111,7 @@ span {
  }
 
 body {
-  background-image: url('/assets/Edmonton-Folk-Fest.jpg');
+  background-image: url('Edmonton-Folk-Fest.jpg');
    background-attachment: fixed;
   font-family: 'Signika', sans-serif;
 }
