@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   root to: "states#index"
   resources :favorites
   resources :states do
-  resources :stations do
-    resources :programs do
-      resources :comments
+    resources :stations do
+      resources :programs do
+        resources :comments
       post 'add_favorite'
       delete 'remove_favorite'
     end

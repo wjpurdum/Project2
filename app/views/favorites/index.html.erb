@@ -2,6 +2,11 @@
 
   <div class="flex">
   <% @favorites.each do |favorite| %>
-    <p><%= "#{favorite.program.name}"%><%= link_to "Check out archived episodes", "#{favorite.program.program_url}" %></p>
+      <%
+      state = favorite.program.station.state
+      station = favorite.program.station
+      program = favorite.program
+      %>
+ +    <p><%= link_to favorite.program.name, state_station_program_path(state, station, program) %><%= link_to "Check out archived episodes", "#{favorite.program.program_url}" %></p>
 <% end %>
 </div>

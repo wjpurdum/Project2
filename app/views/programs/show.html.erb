@@ -15,11 +15,13 @@
     <div class="comments">
     <h3>Let's Discuss</h3>
     <%= link_to "Start a conversation about this program", new_state_station_program_comment_path(@state, @station, @program) %>
-    <%= @program.comments.each do |comment| %>
+    <% @program.comments.each do |comment| %>
     <div>
       <p><%= comment.text %></p>
-      <%= link_to "Edit this Comment", edit_state_station_program_comment_path(@state, @station, @program, comment) %> |
-      <%= link_to "Delete this Comment", state_station_program_comment_path(@state, @station, @program, comment), method: :delete %>
+      <% if(current_user == comment.user)%>
+        <%= link_to "Edit this Comment", edit_state_station_program_comment_path(@state, @station, @program, comment) %> |
+        <%= link_to "Delete this Comment", state_station_program_comment_path(@state, @station, @program, comment), method: :delete %>
+      <% end %>
     </div>
     <% end %>
     </div>
