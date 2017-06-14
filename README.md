@@ -1,4 +1,6 @@
+Bluegrass Collective
 
+# ![pageres](assets/images/snippet.png)
 
 Technologies used:
 1. Rails v. 5.0.2
