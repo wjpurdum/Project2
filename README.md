@@ -15,10 +15,3 @@ Features:
   "Favoriting" feature (to allow users to favorite and un-favorite specific programs)
   User log-in/authentication
   Ability to add/edit/delete comments
-
-
-Unsolved Problems:
-  I wanted to have the programs on the favorites page link back to their program page. I couldn't get the arguments for the path correct to have this work.
-
-Next Steps:
-- Make
